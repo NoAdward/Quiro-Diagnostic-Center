@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $ff;
+}
+.container {
+  max-width: 1170px;
+  margin-inline: auto;
+}
+.title {
+  margin-top: 111px;
+  @include text($ff, 48px, 700, 56px, $paragraph);
+}
+.desc {
+  margin-top: 70px;
+@include text($ff, 16px, 400, 19px, $paragraph);
+max-width: 837px;
+margin-inline: auto;
+}

@@ -1,0 +1,53 @@
+.footer {
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 108px;
+  max-width: 1440px;
+  padding: 106px 228px 81px 147px;
+
+  background: $terciary;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 431px;
+  gap: 26px;
+  &__title {
+    @include text($ff, 24px, 600, 28px, $paragraph);
+  }
+
+  &__desc {
+    @include text($ff, 16px, 400, 19px, $paragraph);
+  }
+}
+.contacts {
+  max-width: 285px;
+  width: 100%;
+}
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  &__title {
+    @include text($ff, 20px, 600, 23px, $paragraph);
+  }
+
+  &__desc {
+    margin-bottom: 37px;
+    @include text($ff, 16px, 400, 19px, $paragraph);
+  }
+}
+.footer-wh {
+  display: flex;
+  flex-direction: column;
+  max-width: 187px;
+  &__title {
+    @include text($ff, 20px, 600, 23px, $paragraph);
+    margin-bottom: 17px;
+  }
+
+  &__desc {
+    @include text($ff, 16px, 400, 19px, $paragraph);
+  }
+}

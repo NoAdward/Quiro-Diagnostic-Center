@@ -1,0 +1,67 @@
+.services-section {
+  text-align: center;
+
+  .title {
+    margin-bottom: 70px;
+  }
+  .desc {
+    margin-bottom: 123px;
+    margin-top: 18px;
+  }
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  @include tablet-small {
+    grid-template-columns: 1fr 1fr ;
+  }
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+  &-card {
+    max-width: 370px;
+    background: $terciary;
+    border-radius: 15px;
+    padding: 46px 26px;
+    transition: $transition;
+    &__img {
+      max-width: 102px;
+      margin-inline: auto;
+    }
+
+    &__title {
+      margin-top: 27.5px;
+      @include text($ff, 24px, 600, 28px, $paragraph);
+    }
+
+    &__desc {
+      margin-top: 17px;
+      @include text($ff, 16px, 400, 19px, $text);
+      margin-bottom: 18px;
+    }
+
+    &__action {
+        display: flex;
+        justify-content: center;
+      a {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        @include text($ff, 16px, 600, 19px, $primary);
+        text-decoration-line: underline;
+      }
+    }
+    &:hover {
+        background: $primary;
+        transform: translateY(-10px);
+        .services-card__title, .services-card__desc, a {
+            color: $white;
+        }
+        svg path {
+            fill: $white;
+        }
+    }
+  }
+}

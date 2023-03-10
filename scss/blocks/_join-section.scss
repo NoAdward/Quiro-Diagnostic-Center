@@ -1,0 +1,49 @@
+.join-section {
+  max-width: 1158px;
+  background-color: $dark_purple;
+  border-radius: 10px;
+  padding: 80px 227px;
+  margin-bottom: 131px;
+  &__title {
+    @include text($ff, 36px, 700, 42px, $white);
+    text-align: center;
+    margin-bottom: 47px;
+  }
+
+  &__input {
+    position: relative;
+    padding: 18px 14px;
+    background: $terciary;
+    border-radius: 50px;
+   
+  }
+
+  &__action {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    max-width: 147px;
+    background: $primary;
+    border-radius: 22px;
+    padding: 11px 25px;
+    @include text($ff, 20px, 600, 23px, $white);
+  }
+}
+.field {
+  &_input {
+    display: flex;
+    margin-inline: auto;
+    max-width: 717px;
+    width: 100%;
+    background: $terciary;
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+    letter-spacing: 0.01em;
+    @include text($ff, 16px, 400, 19px, $black);
+    &::placeholder {
+      color: $dark_grey;
+    }
+  }
+}
